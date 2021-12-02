@@ -1,10 +1,10 @@
 {
-  "name": "desafio15",
+  "name": "desafio16",
   "version": "1.0.0",
   "description": "",
-  "main": "desafio15.js",
+  "main": "desafio16.js",
   "scripts": {
-    "start": "nodemon  ./src/desafio15.js"
+    "start": "nodemon  ./src/desafio16.js"
   },
   "author": "",
   "license": "ISC",

@@ -1,5 +1,4 @@
 const express = require('express')
-const morgan = require('morgan')
 const handlebars = require('express-handlebars')  
 const session = require('express-session')
 const cookieParser = require('cookie-parser')
@@ -68,7 +67,7 @@ app.use((error, req, res, next) => {
   res.status(error.code || 500).json({ error : error.message })
 })
 
-const PORT = 8080
+const PORT = process.argv[2] ||  8080
 
 const server = http.listen(PORT, () => {
   console.log(`servidor escuchando en http://localhost:${PORT}`)
