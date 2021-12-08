@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const os = require('os')
 const { fork } = require('child_process')
 const { isAuth } = require('../middleware/auth')
 
@@ -23,7 +24,7 @@ router.get('/info',(req,res)=>{
       heapUsed:(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)+'MB' ,
       external:(process.memoryUsage().external / 1024 / 1024).toFixed(2)+'MB',
       arrayBuffers:(process.memoryUsage().arrayBuffers / 1024 / 1024).toFixed(2)+'MB' ,
-
+      cpuCount:os.cpus().length,
     },
     path: process.execPath,
     processId: process.pid,
