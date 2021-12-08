@@ -1,7 +1,7 @@
-pm2 start ./src/desafio17.js --name='ServidorCluster' --watch -- 8082 false false CLUSTER
-pm2 start ./src/desafio17.js --name='ServidorCluster' --watch -- 8083 false false CLUSTER
-pm2 start ./src/desafio17.js --name='ServidorCluster' --watch -- 8084 false false CLUSTER
-pm2 start ./src/desafio17.js --name='ServidorCluster' --watch -- 8085 false false CLUSTER
+pm2 start ./src/desafio17.js --name='Cluster' --watch -- 8082 false false CLUSTER
+pm2 start ./src/desafio17.js --name='Cluster' --watch -- 8083 false false CLUSTER
+pm2 start ./src/desafio17.js --name='Cluster' --watch -- 8084 false false CLUSTER
+pm2 start ./src/desafio17.js --name='Cluster' --watch -- 8085 false false CLUSTER
 
 nodemon ./src/desafio17.js cluster
 nodemon ./src/desafio17.js fork
