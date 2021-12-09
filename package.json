@@ -5,12 +5,13 @@
   "main": "desafio17.js",
   "scripts": {
     "start": "nodemon  ./src/desafio17.js",
-    "start:forever": "forever ./src/desafio17.jsr"
+    "start:forever": "forever ./src/desafio17.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cluster": "^0.7.7",
     "connect-mongo": "^4.4.1",
     "cookie-parser": "^1.4.5",
     "dotenv": "^10.0.0",
