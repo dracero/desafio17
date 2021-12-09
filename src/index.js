@@ -1,7 +1,7 @@
 const cluster = require ('cluster')
 const numCPUs = require ('os').cpus().length
 
-if (process.argv[4] == 'CLUSTER'){
+if (process.argv[5] == 'CLUSTER'){
       if(cluster.isMaster){
       console.log(numCPUs)
       console.log(`PID MASTER ${process.pid}`)
@@ -15,10 +15,9 @@ if (process.argv[4] == 'CLUSTER'){
         cluster.fork()
       })
     }else {
-        require('./desafio17')
+        require('./desafio17.js')
     }
   }else {
-    require('./desafio17')
+    require('./desafio17.js')
 
   }
-  

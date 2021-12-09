@@ -4,8 +4,8 @@
   "description": "",
   "main": "desafio17.js",
   "scripts": {
-    "start": "nodemon  ./src/desafio17.js",
-    "start:forever": "forever ./src/desafio17.js"
+    "start": "nodemon  ./src/index.js",
+    "start:forever": "forever start ./src/index.js"
   },
   "author": "",
   "license": "ISC",
